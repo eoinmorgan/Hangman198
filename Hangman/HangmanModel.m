@@ -29,7 +29,7 @@
 }
 
 // returns a new instance of HangmanModel, representing a new game
-- (HangmanModel *)newGameWithString:(NSString *)str {
++ (HangmanModel *)newGameWithString:(NSString *)str {
     return [[HangmanModel alloc] initWithString:str];
 }
 
@@ -42,7 +42,5 @@
         return YES;
     }
 }
-
-
 
 @end

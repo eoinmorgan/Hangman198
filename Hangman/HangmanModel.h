@@ -16,10 +16,10 @@
 @property int numGuesses;
 @property NSMutableArray *guesses;
 
++ (HangmanModel*)newGameWithString:(NSString*)str;
 - (id)initWithString:(NSString*)str;
 - (BOOL)isGameOver;
 - (NSString*)getDisplayString;
-- (HangmanModel*)newGameWithString:(NSString*)str;
 - (BOOL)makeGuessWithLetter:(NSString*)letter;
 
 @end

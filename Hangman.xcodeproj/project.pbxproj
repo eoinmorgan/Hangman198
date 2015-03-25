@@ -17,6 +17,13 @@
 		045B36521AC24A0F007C571B /* HangmanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B36511AC24A0F007C571B /* HangmanModel.m */; };
 		045B36551AC24AB7007C571B /* HangmanString.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B36541AC24AB7007C571B /* HangmanString.m */; };
 		045B36581AC26CD9007C571B /* HangmanStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B36571AC26CD9007C571B /* HangmanStringTests.m */; };
+		04763D071AC284F80069DCFF /* hang0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04763D001AC284F80069DCFF /* hang0.jpg */; };
+		04763D081AC284F80069DCFF /* hang1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04763D011AC284F80069DCFF /* hang1.jpg */; };
+		04763D091AC284F80069DCFF /* hang2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04763D021AC284F80069DCFF /* hang2.jpg */; };
+		04763D0A1AC284F80069DCFF /* hang3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04763D031AC284F80069DCFF /* hang3.jpg */; };
+		04763D0B1AC284F80069DCFF /* hang4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04763D041AC284F80069DCFF /* hang4.jpg */; };
+		04763D0C1AC284F80069DCFF /* hang5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04763D051AC284F80069DCFF /* hang5.jpg */; };
+		04763D0D1AC284F80069DCFF /* hang6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04763D061AC284F80069DCFF /* hang6.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +55,13 @@
 		045B36531AC24AB7007C571B /* HangmanString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HangmanString.h; sourceTree = "<group>"; };
 		045B36541AC24AB7007C571B /* HangmanString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HangmanString.m; sourceTree = "<group>"; };
 		045B36571AC26CD9007C571B /* HangmanStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HangmanStringTests.m; sourceTree = "<group>"; };
+		04763D001AC284F80069DCFF /* hang0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hang0.jpg; sourceTree = "<group>"; };
+		04763D011AC284F80069DCFF /* hang1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hang1.jpg; sourceTree = "<group>"; };
+		04763D021AC284F80069DCFF /* hang2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hang2.jpg; sourceTree = "<group>"; };
+		04763D031AC284F80069DCFF /* hang3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hang3.jpg; sourceTree = "<group>"; };
+		04763D041AC284F80069DCFF /* hang4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hang4.jpg; sourceTree = "<group>"; };
+		04763D051AC284F80069DCFF /* hang5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hang5.jpg; sourceTree = "<group>"; };
+		04763D061AC284F80069DCFF /* hang6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hang6.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +122,13 @@
 		045B362A1AC249E4007C571B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				04763D001AC284F80069DCFF /* hang0.jpg */,
+				04763D011AC284F80069DCFF /* hang1.jpg */,
+				04763D021AC284F80069DCFF /* hang2.jpg */,
+				04763D031AC284F80069DCFF /* hang3.jpg */,
+				04763D041AC284F80069DCFF /* hang4.jpg */,
+				04763D051AC284F80069DCFF /* hang5.jpg */,
+				04763D061AC284F80069DCFF /* hang6.jpg */,
 				045B362B1AC249E4007C571B /* Info.plist */,
 				045B362C1AC249E4007C571B /* main.m */,
 			);
@@ -212,9 +233,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04763D0D1AC284F80069DCFF /* hang6.jpg in Resources */,
 				045B36361AC249E4007C571B /* Main.storyboard in Resources */,
+				04763D0A1AC284F80069DCFF /* hang3.jpg in Resources */,
+				04763D091AC284F80069DCFF /* hang2.jpg in Resources */,
+				04763D071AC284F80069DCFF /* hang0.jpg in Resources */,
 				045B363B1AC249E4007C571B /* LaunchScreen.xib in Resources */,
 				045B36381AC249E4007C571B /* Images.xcassets in Resources */,
+				04763D0C1AC284F80069DCFF /* hang5.jpg in Resources */,
+				04763D0B1AC284F80069DCFF /* hang4.jpg in Resources */,
+				04763D081AC284F80069DCFF /* hang1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +458,7 @@
 				045B364C1AC249E4007C571B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		045B364D1AC249E4007C571B /* Build configuration list for PBXNativeTarget "HangmanTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +467,7 @@
 				045B364F1AC249E4007C571B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
