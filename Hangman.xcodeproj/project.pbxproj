@@ -15,6 +15,7 @@
 		045B363B1AC249E4007C571B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045B36391AC249E4007C571B /* LaunchScreen.xib */; };
 		045B36471AC249E4007C571B /* HangmanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B36461AC249E4007C571B /* HangmanTests.m */; };
 		045B36521AC24A0F007C571B /* HangmanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B36511AC24A0F007C571B /* HangmanModel.m */; };
+		045B36551AC24AB7007C571B /* HangmanString.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B36541AC24AB7007C571B /* HangmanString.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		045B36461AC249E4007C571B /* HangmanTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HangmanTests.m; sourceTree = "<group>"; };
 		045B36501AC24A0F007C571B /* HangmanModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HangmanModel.h; sourceTree = "<group>"; };
 		045B36511AC24A0F007C571B /* HangmanModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HangmanModel.m; sourceTree = "<group>"; };
+		045B36531AC24AB7007C571B /* HangmanString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HangmanString.h; sourceTree = "<group>"; };
+		045B36541AC24AB7007C571B /* HangmanString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HangmanString.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,8 @@
 				045B36371AC249E4007C571B /* Images.xcassets */,
 				045B36391AC249E4007C571B /* LaunchScreen.xib */,
 				045B362A1AC249E4007C571B /* Supporting Files */,
+				045B36531AC24AB7007C571B /* HangmanString.h */,
+				045B36541AC24AB7007C571B /* HangmanString.m */,
 			);
 			path = Hangman;
 			sourceTree = "<group>";
@@ -226,6 +231,7 @@
 			files = (
 				045B36521AC24A0F007C571B /* HangmanModel.m in Sources */,
 				045B36331AC249E4007C571B /* HangmanController.m in Sources */,
+				045B36551AC24AB7007C571B /* HangmanString.m in Sources */,
 				045B36301AC249E4007C571B /* AppDelegate.m in Sources */,
 				045B362D1AC249E4007C571B /* main.m in Sources */,
 			);
