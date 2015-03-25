@@ -27,6 +27,7 @@
 }
 
 - (NSString*)getDisplayForGuesses:(NSArray *)knownLetters {
+    knownLetters = [knownLetters arrayByAddingObject:@" "];
     NSString *displayString = @"";
     for (int i = 0; i < self.str.length; i++) {
         NSString *letter = [self.str substringWithRange:NSMakeRange(i, 1)];
