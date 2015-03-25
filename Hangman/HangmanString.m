@@ -10,4 +10,34 @@
 
 @implementation HangmanString
 
+- (id)initWithString:(NSString*)str {
+    if (self = [super init]) {
+        self.str = str;
+    }
+    return self;
+}
+
+- (BOOL)doesContainLetter:(NSString *)letter {
+    NSRange range = [self.str rangeOfString:letter];
+    if (range.location != NSNotFound) {
+        return YES;
+    }
+    
+    return NO;
+}
+
+- (NSString*)getDisplayForGuesses:(NSArray *)knownLetters {
+    NSString *displayString = @"";
+    for (int i = 0; i < self.str.length; i++) {
+        NSString *letter = [self.str substringWithRange:NSMakeRange(i, 1)];
+        if ([knownLetters containsObject:letter]) {
+            displayString = [displayString stringByAppendingString:letter];
+        } else {
+            displayString = [displayString stringByAppendingString:@"?"];
+        }
+    }
+    
+    return displayString;
+}
+
 @end

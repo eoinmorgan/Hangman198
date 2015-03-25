@@ -16,6 +16,7 @@
 		045B36471AC249E4007C571B /* HangmanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B36461AC249E4007C571B /* HangmanTests.m */; };
 		045B36521AC24A0F007C571B /* HangmanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B36511AC24A0F007C571B /* HangmanModel.m */; };
 		045B36551AC24AB7007C571B /* HangmanString.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B36541AC24AB7007C571B /* HangmanString.m */; };
+		045B36581AC26CD9007C571B /* HangmanStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B36571AC26CD9007C571B /* HangmanStringTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		045B36511AC24A0F007C571B /* HangmanModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HangmanModel.m; sourceTree = "<group>"; };
 		045B36531AC24AB7007C571B /* HangmanString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HangmanString.h; sourceTree = "<group>"; };
 		045B36541AC24AB7007C571B /* HangmanString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HangmanString.m; sourceTree = "<group>"; };
+		045B36561AC26CD9007C571B /* HangmanStringTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HangmanStringTests.h; sourceTree = "<group>"; };
+		045B36571AC26CD9007C571B /* HangmanStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HangmanStringTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 		045B36431AC249E4007C571B /* HangmanTests */ = {
 			isa = PBXGroup;
 			children = (
+				045B36561AC26CD9007C571B /* HangmanStringTests.h */,
+				045B36571AC26CD9007C571B /* HangmanStringTests.m */,
 				045B36461AC249E4007C571B /* HangmanTests.m */,
 				045B36441AC249E4007C571B /* Supporting Files */,
 			);
@@ -242,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				045B36471AC249E4007C571B /* HangmanTests.m in Sources */,
+				045B36581AC26CD9007C571B /* HangmanStringTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
