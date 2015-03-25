@@ -47,7 +47,6 @@
 		045B36511AC24A0F007C571B /* HangmanModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HangmanModel.m; sourceTree = "<group>"; };
 		045B36531AC24AB7007C571B /* HangmanString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HangmanString.h; sourceTree = "<group>"; };
 		045B36541AC24AB7007C571B /* HangmanString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HangmanString.m; sourceTree = "<group>"; };
-		045B36561AC26CD9007C571B /* HangmanStringTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HangmanStringTests.h; sourceTree = "<group>"; };
 		045B36571AC26CD9007C571B /* HangmanStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HangmanStringTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,7 +117,6 @@
 		045B36431AC249E4007C571B /* HangmanTests */ = {
 			isa = PBXGroup;
 			children = (
-				045B36561AC26CD9007C571B /* HangmanStringTests.h */,
 				045B36571AC26CD9007C571B /* HangmanStringTests.m */,
 				045B36461AC249E4007C571B /* HangmanTests.m */,
 				045B36441AC249E4007C571B /* Supporting Files */,
