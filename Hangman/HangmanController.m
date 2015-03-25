@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 Morgan. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "HangmanController.h"
 
-@interface ViewController ()
+@interface HangmanController ()
 
 @end
 
-@implementation ViewController
+@implementation HangmanController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
