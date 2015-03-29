@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *hangmanImageView;
 @property (weak, nonatomic) IBOutlet UILabel *guessesSoFar;
 @property (weak, nonatomic) IBOutlet UITextField *guessTextField;
+@property (weak, nonatomic) IBOutlet UILabel *displayString;
 
 @end
 
@@ -33,6 +34,8 @@
         [self.game makeGuessWithString:guess];
     }
     
+    self.guessTextField.text = @"";
+    self.guessesSoFar.text = [self.game getGuessString];
     [self redraw];
 }
 
@@ -48,7 +51,7 @@
     NSString *fileName = [self getImageForGuessNum:self.game.numGuesses];
     UIImage *hangmanImage = [UIImage imageNamed:fileName];
     self.hangmanImageView.image = hangmanImage;
-    
+    self.displayString.text = [self.game getDisplayString];
     
 }
 
