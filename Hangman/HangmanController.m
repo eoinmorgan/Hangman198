@@ -13,7 +13,8 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *guessTextField;
 @property (weak, nonatomic) IBOutlet UILabel *wordDisplayTextField;
-@property (strong, nonatomic) IBOutlet UIImageView *hangmanImageView;
+@property (weak, nonatomic) IBOutlet UIView *hangmanImageView;
+
 @property HangmanModel *game;
 
 @end
@@ -24,7 +25,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.game = [[HangmanModel alloc] initWithString:@"TEST"];
-    self.hangmanImageView = [[UIImageView alloc] init];
+    self.hangmanImageView = [[UIView alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,10 +35,11 @@
 
 - (void)redraw {
     NSString *imageName = @"hang";
-    NSString *imageNum = [NSString stringWithFormat:@"%d", self.game.numGuesses];
+    NSString *imageNum = [NSString stringWithFormat:@"%d.jpg", self.game.numGuesses];
     imageName = [imageName stringByAppendingString:imageNum];
     UIImage *hangmanImage = [UIImage imageNamed:imageName];
-    [self.hangmanImageView setImage:hangmanImage];
+    [self.hangmanImageView addSubview:[[UIImageView alloc] initWithImage:hangmanImage]];
+    [self.hangmanImageView setNeedsDisplay];
 }
 
 - (IBAction)makeGuess:(id)sender {

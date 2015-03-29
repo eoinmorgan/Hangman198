@@ -10,6 +10,5 @@
 
 @interface HangmanController : UIViewController
 
-
 @end
 

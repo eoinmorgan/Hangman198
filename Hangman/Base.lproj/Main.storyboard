@@ -43,18 +43,19 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gh-e5-jRA">
                                 <rect key="frame" x="16" y="58" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hang6" translatesAutoresizingMaskIntoConstraints="NO" id="qgb-PX-24W">
-                                <rect key="frame" x="16" y="87" width="168" height="195"/>
-                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x0u-tO-hDz">
+                                <rect key="frame" x="16" y="87" width="300" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="guessTextField" destination="Mh3-en-g5Y" id="poW-qc-Ld9"/>
-                        <outlet property="hangmanImageView" destination="qgb-PX-24W" id="lEe-PB-n56"/>
+                        <outlet property="hangmanImageView" destination="x0u-tO-hDz" id="eN7-Qt-hqR"/>
                         <outlet property="wordDisplayTextField" destination="4gh-e5-jRA" id="PcW-RQ-s4M"/>
                     </connections>
                 </viewController>
@@ -62,7 +63,4 @@
             </objects>
         </scene>
     </scenes>
-    <resources>
-        <image name="hang6" width="272" height="291"/>
-    </resources>
 </document>

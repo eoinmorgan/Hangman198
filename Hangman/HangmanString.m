@@ -26,6 +26,10 @@
     return NO;
 }
 
+- (BOOL)areStringsEqual:(NSString *)str {
+    return [self.str isEqualToString:str];
+}
+
 - (NSString*)getDisplayForGuesses:(NSArray *)knownLetters {
     knownLetters = [knownLetters arrayByAddingObject:@" "];
     NSString *displayString = @"";

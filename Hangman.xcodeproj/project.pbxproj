@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		045B362D1AC249E4007C571B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B362C1AC249E4007C571B /* main.m */; };
 		045B36301AC249E4007C571B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B362F1AC249E4007C571B /* AppDelegate.m */; };
-		045B36331AC249E4007C571B /* HangmanController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B36321AC249E4007C571B /* HangmanController.m */; };
-		045B36361AC249E4007C571B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045B36341AC249E4007C571B /* Main.storyboard */; };
 		045B36381AC249E4007C571B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045B36371AC249E4007C571B /* Images.xcassets */; };
 		045B363B1AC249E4007C571B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045B36391AC249E4007C571B /* LaunchScreen.xib */; };
 		045B36471AC249E4007C571B /* HangmanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B36461AC249E4007C571B /* HangmanTests.m */; };
 		045B36521AC24A0F007C571B /* HangmanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B36511AC24A0F007C571B /* HangmanModel.m */; };
 		045B36551AC24AB7007C571B /* HangmanString.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B36541AC24AB7007C571B /* HangmanString.m */; };
 		045B36581AC26CD9007C571B /* HangmanStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B36571AC26CD9007C571B /* HangmanStringTests.m */; };
+		0473559E1AC78C4D00BD2060 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0473559D1AC78C4D00BD2060 /* Main.storyboard */; };
+		047355A11AC78D9900BD2060 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047355A01AC78D9900BD2060 /* MainViewController.m */; };
 		04763D071AC284F80069DCFF /* hang0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04763D001AC284F80069DCFF /* hang0.jpg */; };
 		04763D081AC284F80069DCFF /* hang1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04763D011AC284F80069DCFF /* hang1.jpg */; };
 		04763D091AC284F80069DCFF /* hang2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04763D021AC284F80069DCFF /* hang2.jpg */; };
@@ -42,9 +42,6 @@
 		045B362C1AC249E4007C571B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		045B362E1AC249E4007C571B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		045B362F1AC249E4007C571B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		045B36311AC249E4007C571B /* HangmanController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HangmanController.h; sourceTree = "<group>"; };
-		045B36321AC249E4007C571B /* HangmanController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HangmanController.m; sourceTree = "<group>"; };
-		045B36351AC249E4007C571B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		045B36371AC249E4007C571B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		045B363A1AC249E4007C571B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		045B36401AC249E4007C571B /* HangmanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HangmanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +52,9 @@
 		045B36531AC24AB7007C571B /* HangmanString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HangmanString.h; sourceTree = "<group>"; };
 		045B36541AC24AB7007C571B /* HangmanString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HangmanString.m; sourceTree = "<group>"; };
 		045B36571AC26CD9007C571B /* HangmanStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HangmanStringTests.m; sourceTree = "<group>"; };
+		0473559D1AC78C4D00BD2060 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		0473559F1AC78D9900BD2060 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		047355A01AC78D9900BD2060 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		04763D001AC284F80069DCFF /* hang0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hang0.jpg; sourceTree = "<group>"; };
 		04763D011AC284F80069DCFF /* hang1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hang1.jpg; sourceTree = "<group>"; };
 		04763D021AC284F80069DCFF /* hang2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hang2.jpg; sourceTree = "<group>"; };
@@ -107,14 +107,14 @@
 				045B36511AC24A0F007C571B /* HangmanModel.m */,
 				045B362E1AC249E4007C571B /* AppDelegate.h */,
 				045B362F1AC249E4007C571B /* AppDelegate.m */,
-				045B36311AC249E4007C571B /* HangmanController.h */,
-				045B36321AC249E4007C571B /* HangmanController.m */,
-				045B36341AC249E4007C571B /* Main.storyboard */,
 				045B36371AC249E4007C571B /* Images.xcassets */,
 				045B36391AC249E4007C571B /* LaunchScreen.xib */,
 				045B362A1AC249E4007C571B /* Supporting Files */,
 				045B36531AC24AB7007C571B /* HangmanString.h */,
 				045B36541AC24AB7007C571B /* HangmanString.m */,
+				0473559D1AC78C4D00BD2060 /* Main.storyboard */,
+				0473559F1AC78D9900BD2060 /* MainViewController.h */,
+				047355A01AC78D9900BD2060 /* MainViewController.m */,
 			);
 			path = Hangman;
 			sourceTree = "<group>";
@@ -234,7 +234,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				04763D0D1AC284F80069DCFF /* hang6.jpg in Resources */,
-				045B36361AC249E4007C571B /* Main.storyboard in Resources */,
 				04763D0A1AC284F80069DCFF /* hang3.jpg in Resources */,
 				04763D091AC284F80069DCFF /* hang2.jpg in Resources */,
 				04763D071AC284F80069DCFF /* hang0.jpg in Resources */,
@@ -243,6 +242,7 @@
 				04763D0C1AC284F80069DCFF /* hang5.jpg in Resources */,
 				04763D0B1AC284F80069DCFF /* hang4.jpg in Resources */,
 				04763D081AC284F80069DCFF /* hang1.jpg in Resources */,
+				0473559E1AC78C4D00BD2060 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,9 +261,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				045B36521AC24A0F007C571B /* HangmanModel.m in Sources */,
-				045B36331AC249E4007C571B /* HangmanController.m in Sources */,
 				045B36551AC24AB7007C571B /* HangmanString.m in Sources */,
 				045B36301AC249E4007C571B /* AppDelegate.m in Sources */,
+				047355A11AC78D9900BD2060 /* MainViewController.m in Sources */,
 				045B362D1AC249E4007C571B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,14 +288,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		045B36341AC249E4007C571B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				045B36351AC249E4007C571B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		045B36391AC249E4007C571B /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

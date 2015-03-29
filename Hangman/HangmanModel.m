@@ -15,13 +15,14 @@
         self.word = [[HangmanString alloc] initWithString:str];
         self.maxGuesses = 14;
         self.numGuesses = 0;
+        self.guessedWord = NO;
         self.guesses = [NSMutableArray arrayWithObjects: nil];
     }
     return self;
 }
 
 - (BOOL)isGameOver {
-    return self.numGuesses >= self.maxGuesses;
+    return (self.numGuesses >= self.maxGuesses) || self.guessedWord;
 }
 
 - (NSString *)getDisplayString {
@@ -41,6 +42,13 @@
         [self.guesses addObject:letter];
         return YES;
     }
+}
+
+- (BOOL)makeGuessWithString:(NSString *)str {
+    if (str.length == 1) {
+        return [self makeGuessWithLetter:str];
+    }
+    return NO;
 }
 
 @end
