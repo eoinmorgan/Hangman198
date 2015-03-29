@@ -43,6 +43,10 @@
     [self.guesses addObject:letter];
     if ([self.word doesContainLetter:letter]) {
         self.correctGuesses++;
+        if (self.correctGuesses == self.word.numUniqueLetters) {
+            self.gameIsOver = YES;
+        }
+        
     }else {
         self.numGuesses++;
     }

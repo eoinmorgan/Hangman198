@@ -51,15 +51,8 @@
 }
 
 - (void) testCountUniqueLetters {
-    NSString *str = @"TEST STRING";
-    HangmanString *hs = [[HangmanString alloc] initWithString:str];
-    
-    XCTAssertEqual([hs countUniqueLetters], 7);
-    
-    str = @"TTTTTTT";
-    hs = [[HangmanString alloc] initWithString:str];
-    
-    XCTAssertEqual([hs countUniqueLetters], 1);
+    XCTAssertEqual([HangmanString countUniqueLetters:@"TEST STRING"], 7);
+    XCTAssertEqual([HangmanString countUniqueLetters:@"TTTTTTT"], 1);
 }
 
 @end

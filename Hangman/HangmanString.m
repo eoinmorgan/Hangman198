@@ -13,6 +13,7 @@
 - (id)initWithString:(NSString*)str {
     if (self = [super init]) {
         self.word = str;
+        self.numUniqueLetters = [HangmanString countUniqueLetters:self.word];
     }
     return self;
 }
@@ -45,13 +46,13 @@
     return displayString;
 }
 
-- (int)countUniqueLetters {
++ (int)countUniqueLetters:(NSString*)word {
     NSMutableSet *letters = [[NSMutableSet alloc] init];
 
     
-    for (int i = 0; i < self.word.length; i++)
+    for (int i = 0; i < word.length; i++)
     {
-        NSString *letter = [self.word substringWithRange:NSMakeRange(i, 1)];
+        NSString *letter = [word substringWithRange:NSMakeRange(i, 1)];
         if (![letter isEqualToString:@" "]) {
             [letters addObject:letter];
         }

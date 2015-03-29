@@ -46,6 +46,18 @@
     XCTAssertEqual([model.guesses count], 7);
     XCTAssertEqual(model.correctGuesses, 1);
     
+    model = [HangmanModel newGameWithString:@"TEST2"];
+    [model makeGuessWithString:@"test2"];
+    XCTAssertEqual(model.gameIsOver, YES);
+    
+    model = [HangmanModel newGameWithString:@"TEST3"];
+    [model makeGuessWithLetter:@"T"];
+    [model makeGuessWithLetter:@"E"];
+    [model makeGuessWithLetter:@"S"];
+    [model makeGuessWithLetter:@"3"];
+    XCTAssertEqual([model gameIsOver], YES);
+    XCTAssertEqual(model.correctGuesses, 4);
+    XCTAssertEqual([model.guesses count], 4);
 }
 
 @end
