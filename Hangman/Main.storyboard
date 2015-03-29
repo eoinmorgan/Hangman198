@@ -16,9 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ALr-mt-1Fu">
-                                <rect key="frame" x="-5" y="297" width="605" height="303"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWI-wv-u5y">
                                 <rect key="frame" x="121" y="20" width="44" height="30"/>
                                 <state key="normal" title="Guess">
@@ -54,10 +51,14 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ALr-mt-1Fu">
+                                <rect key="frame" x="16" y="87" width="271" height="297"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="guessTextField" destination="yQ1-5u-UiY" id="aFv-Uh-MJs"/>
                         <outlet property="guessesSoFar" destination="tne-W4-Tc2" id="V6o-yq-QTV"/>
                         <outlet property="hangmanImageView" destination="ALr-mt-1Fu" id="3SK-XQ-AHc"/>
                     </connections>

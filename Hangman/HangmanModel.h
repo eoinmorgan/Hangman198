@@ -21,6 +21,7 @@
 + (HangmanModel*)newGameWithString:(NSString*)str;
 - (id)initWithString:(NSString*)str;
 - (NSString*)getDisplayString;
+- (NSString*)getGuessString;
 - (void)makeGuessWithLetter:(NSString*)letter;
 - (void)makeGuessWithString:(NSString*)str;
 

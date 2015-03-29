@@ -33,12 +33,10 @@
 
 - (void)makeGuessWithLetter:(NSString *)letter {
     // ignore if game is over or we try adding a duplicate letter
+    letter = [letter uppercaseString];
     if (self.gameIsOver || [self.guesses containsObject:letter]) {
         return;
     }
-    
-    letter = [letter uppercaseString];
-    
     
     [self.guesses addObject:letter];
     if ([self.word doesContainLetter:letter]) {
@@ -72,6 +70,10 @@
             self.gameIsOver = YES;
         }
     }
+}
+
+- (NSString *)getGuessString {
+    return  [[self.guesses valueForKey:@"description"] componentsJoinedByString:@", "];
 }
 
 @end
