@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HangmanModel.h"
 
 @interface MainViewController : UIViewController
+
+@property HangmanModel *game;
+
+- (IBAction)startNewGame:(id)sender;
 
 @end

@@ -11,6 +11,7 @@
 @interface MainViewController ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *hangmanImageView;
+@property (weak, nonatomic) IBOutlet UILabel *guessesSoFar;
 
 @end
 
@@ -18,24 +19,30 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    UIImage *hang0 = [UIImage imageNamed:@"hang0.jpg"];
-    self.hangmanImageView.image = hang0;
+    [self startNewGame:self];
+}
+
+- (IBAction)makeGuess:(id)sender {
+}
+
+- (IBAction)startNewGame:(id)sender {
+    // should randomly generate a string here
+    self.game = [HangmanModel newGameWithString:@"Test"];
+    [self redraw];
+}
+
+- (void)redraw {
+    NSString *fileName = [self getImageForGuessNum:self.game.numGuesses];
+    UIImage *hangmanImage = [UIImage imageNamed:fileName];
+    self.hangmanImageView.image = hangmanImage;
+}
+
+- (NSString*)getImageForGuessNum:(int)numGuesses {
+    return [NSString stringWithFormat:@"hang%d.jpg", numGuesses];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
