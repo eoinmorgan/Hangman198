@@ -10,11 +10,12 @@
 
 @interface HangmanString : NSObject
 
-@property NSString *str;
+@property NSString *word;
 
 - (id)initWithString:(NSString*)str;
 - (BOOL)doesContainLetter:(NSString*)letter;
 - (BOOL)areStringsEqual:(NSString*)str;
 - (NSString*)getDisplayForGuesses:(NSArray*)knownLetters;
+- (int)countUniqueLetters;
 
 @end

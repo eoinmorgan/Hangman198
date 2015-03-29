@@ -12,13 +12,13 @@
 
 - (id)initWithString:(NSString*)str {
     if (self = [super init]) {
-        self.str = str;
+        self.word = str;
     }
     return self;
 }
 
 - (BOOL)doesContainLetter:(NSString *)letter {
-    NSRange range = [self.str rangeOfString:letter];
+    NSRange range = [self.word rangeOfString:letter];
     if (range.location != NSNotFound) {
         return YES;
     }
@@ -27,14 +27,14 @@
 }
 
 - (BOOL)areStringsEqual:(NSString *)str {
-    return [self.str isEqualToString:str];
+    return [self.word isEqualToString:str];
 }
 
 - (NSString*)getDisplayForGuesses:(NSArray *)knownLetters {
     knownLetters = [knownLetters arrayByAddingObject:@" "];
     NSString *displayString = @"";
-    for (int i = 0; i < self.str.length; i++) {
-        NSString *letter = [self.str substringWithRange:NSMakeRange(i, 1)];
+    for (int i = 0; i < self.word.length; i++) {
+        NSString *letter = [self.word substringWithRange:NSMakeRange(i, 1)];
         if ([knownLetters containsObject:letter]) {
             displayString = [displayString stringByAppendingString:letter];
         } else {
@@ -43,6 +43,21 @@
     }
     
     return displayString;
+}
+
+- (int)countUniqueLetters {
+    NSMutableSet *letters = [[NSMutableSet alloc] init];
+
+    
+    for (int i = 0; i < self.word.length; i++)
+    {
+        NSString *letter = [self.word substringWithRange:NSMakeRange(i, 1)];
+        if (![letter isEqualToString:@" "]) {
+            [letters addObject:letter];
+        }
+    }
+    
+    return (int)[letters count];
 }
 
 @end

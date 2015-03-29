@@ -14,14 +14,14 @@
 @property HangmanString *word;
 @property int maxGuesses;
 @property int numGuesses;
-@property BOOL guessedWord;
+@property int correctGuesses;
 @property NSMutableArray *guesses;
+@property BOOL gameIsOver;
 
 + (HangmanModel*)newGameWithString:(NSString*)str;
 - (id)initWithString:(NSString*)str;
-- (BOOL)isGameOver;
 - (NSString*)getDisplayString;
-- (BOOL)makeGuessWithLetter:(NSString*)letter;
-- (BOOL)makeGuessWithString:(NSString*)str;
+- (void)makeGuessWithLetter:(NSString*)letter;
+- (void)makeGuessWithString:(NSString*)str;
 
 @end

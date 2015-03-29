@@ -13,16 +13,13 @@
 - (id)initWithString:(NSString*)str {
     if (self = [super init]) {
         self.word = [[HangmanString alloc] initWithString:str];
-        self.maxGuesses = 14;
+        self.maxGuesses = 6;
         self.numGuesses = 0;
-        self.guessedWord = NO;
+        self.correctGuesses = 0;
         self.guesses = [NSMutableArray arrayWithObjects: nil];
+        self.gameIsOver = NO;
     }
     return self;
-}
-
-- (BOOL)isGameOver {
-    return (self.numGuesses >= self.maxGuesses) || self.guessedWord;
 }
 
 - (NSString *)getDisplayString {
@@ -34,21 +31,43 @@
     return [[HangmanModel alloc] initWithString:str];
 }
 
-// returns YES iff we added a new letter to our list of guesses (ie. that letter was not already present)
-- (BOOL)makeGuessWithLetter:(NSString *)letter {
-    if ([self.guesses containsObject:letter]) {
-        return NO;
-    } else {
-        [self.guesses addObject:letter];
-        return YES;
+- (void)makeGuessWithLetter:(NSString *)letter {
+    // ignore if game is over or we try adding a duplicate letter
+    if (self.gameIsOver || [self.guesses containsObject:letter]) {
+        return;
     }
+    
+    letter = [letter uppercaseString];
+    
+    
+    [self.guesses addObject:letter];
+    if ([self.word doesContainLetter:letter]) {
+        self.correctGuesses++;
+    }else {
+        self.numGuesses++;
+    }
+    
+    if (self.numGuesses >= self.maxGuesses) {
+        self.gameIsOver = YES;
+    }
+    
 }
 
-- (BOOL)makeGuessWithString:(NSString *)str {
-    if (str.length == 1) {
-        return [self makeGuessWithLetter:str];
+- (void)makeGuessWithString:(NSString *)str {
+    if (self.gameIsOver) {
+        return;
     }
-    return NO;
+    
+    str = [str uppercaseString];
+    
+    if ([str isEqualToString:self.word.word]) {
+        self.gameIsOver = YES;
+    } else {
+        self.numGuesses++;
+        if (self.numGuesses >= self.maxGuesses) {
+            self.gameIsOver = YES;
+        }
+    }
 }
 
 @end
