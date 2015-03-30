@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "HangmanString.h"
+#import "HangmanWords.h"
 
 @interface HangmanModel : NSObject
 
@@ -17,6 +18,7 @@
 @property int correctGuesses;
 @property NSMutableArray *guesses;
 @property BOOL gameIsOver;
+
 
 + (HangmanModel*)newGameWithString:(NSString*)str;
 - (id)initWithString:(NSString*)str;

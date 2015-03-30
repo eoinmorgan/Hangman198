@@ -64,6 +64,7 @@
     
     if ([str isEqualToString:self.word.word]) {
         self.gameIsOver = YES;
+        
     } else {
         self.numGuesses++;
         if (self.numGuesses >= self.maxGuesses) {

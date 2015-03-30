@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0441FBD81AC8D04900CD4271 /* HangmanWords.m in Sources */ = {isa = PBXBuildFile; fileRef = 0441FBD61AC8D04900CD4271 /* HangmanWords.m */; };
+		0441FBD91AC8D04900CD4271 /* words.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0441FBD71AC8D04900CD4271 /* words.plist */; };
 		045B362D1AC249E4007C571B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B362C1AC249E4007C571B /* main.m */; };
 		045B36301AC249E4007C571B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 045B362F1AC249E4007C571B /* AppDelegate.m */; };
 		045B36381AC249E4007C571B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045B36371AC249E4007C571B /* Images.xcassets */; };
@@ -38,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0441FBD51AC8D04900CD4271 /* HangmanWords.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HangmanWords.h; sourceTree = "<group>"; };
+		0441FBD61AC8D04900CD4271 /* HangmanWords.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HangmanWords.m; sourceTree = "<group>"; };
+		0441FBD71AC8D04900CD4271 /* words.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = words.plist; sourceTree = "<group>"; };
 		045B36271AC249E4007C571B /* Hangman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hangman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		045B362B1AC249E4007C571B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		045B362C1AC249E4007C571B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -105,6 +110,9 @@
 		045B36291AC249E4007C571B /* Hangman */ = {
 			isa = PBXGroup;
 			children = (
+				0441FBD51AC8D04900CD4271 /* HangmanWords.h */,
+				0441FBD61AC8D04900CD4271 /* HangmanWords.m */,
+				0441FBD71AC8D04900CD4271 /* words.plist */,
 				045B36501AC24A0F007C571B /* HangmanModel.h */,
 				045B36511AC24A0F007C571B /* HangmanModel.m */,
 				045B362E1AC249E4007C571B /* AppDelegate.h */,
@@ -245,6 +253,7 @@
 				04763D0C1AC284F80069DCFF /* hang5.jpg in Resources */,
 				04763D0B1AC284F80069DCFF /* hang4.jpg in Resources */,
 				04763D081AC284F80069DCFF /* hang1.jpg in Resources */,
+				0441FBD91AC8D04900CD4271 /* words.plist in Resources */,
 				0473559E1AC78C4D00BD2060 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +274,7 @@
 			files = (
 				045B36521AC24A0F007C571B /* HangmanModel.m in Sources */,
 				045B36551AC24AB7007C571B /* HangmanString.m in Sources */,
+				0441FBD81AC8D04900CD4271 /* HangmanWords.m in Sources */,
 				045B36301AC249E4007C571B /* AppDelegate.m in Sources */,
 				047355A11AC78D9900BD2060 /* MainViewController.m in Sources */,
 				045B362D1AC249E4007C571B /* main.m in Sources */,

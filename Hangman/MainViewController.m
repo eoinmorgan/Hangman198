@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *guessesSoFar;
 @property (weak, nonatomic) IBOutlet UITextField *guessTextField;
 @property (weak, nonatomic) IBOutlet UILabel *displayString;
+@property (weak, nonatomic) IBOutlet UILabel *gameOverLabel;
 
 @end
 
@@ -21,6 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.wordGen = [[HangmanWords alloc] init];
     [self startNewGame:self];
 }
 
@@ -41,7 +43,9 @@
 
 - (IBAction)startNewGame:(id)sender {
     // should randomly generate a string here
-    self.game = [HangmanModel newGameWithString:@"TEST"];
+    NSString *word =[self.wordGen getWord];
+    self.game = [HangmanModel newGameWithString:word];
+    NSLog(@"%@",    word);
     [self redraw];
     
     self.guessesSoFar.text = [self.game getGuessString];
@@ -52,6 +56,11 @@
     UIImage *hangmanImage = [UIImage imageNamed:fileName];
     self.hangmanImageView.image = hangmanImage;
     self.displayString.text = [self.game getDisplayString];
+    if (self.game.gameIsOver) {
+        self.gameOverLabel.hidden = NO;
+    } else {
+        self.gameOverLabel.hidden = YES;
+    }
     
 }
 

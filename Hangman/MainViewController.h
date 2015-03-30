@@ -12,6 +12,7 @@
 @interface MainViewController : UIViewController
 
 @property HangmanModel *game;
+@property HangmanWords *wordGen;
 
 - (IBAction)startNewGame:(id)sender;
 
